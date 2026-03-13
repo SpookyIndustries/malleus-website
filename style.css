@@ -498,6 +498,67 @@ h1, h2, h3 {
 }
 
 /* ============================================
+   FOUNDING CUSTOMERS
+   ============================================ */
+.founding {
+  background: #F5F0EB;
+  padding: 100px 0;
+}
+
+.founding .section-title {
+  color: #1A1A2E;
+}
+
+.founding-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.founding-item {
+  text-align: center;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.founding-item:hover {
+  transform: translateY(-4px);
+  border-color: #C75B12;
+}
+
+.founding-icon {
+  width: 48px;
+  height: 48px;
+  color: #C75B12;
+  margin: 0 auto 16px;
+}
+
+.founding-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.founding-item h3 {
+  font-size: 1.1rem;
+  color: #1A1A2E;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.founding-item p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ============================================
    CONTACT
    ============================================ */
 .contact {
@@ -569,6 +630,198 @@ h1, h2, h3 {
 .contact-form .btn {
   grid-column: 1 / -1;
   margin-top: 8px;
+}
+
+/* Progress Steps */
+.form-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 0;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.progress-step.active,
+.progress-step.completed {
+  opacity: 1;
+}
+
+.step-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #3D3D5C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #EAEAEA;
+  transition: all 0.3s ease;
+}
+
+.progress-step.active .step-number {
+  border-color: #C75B12;
+  background: #C75B12;
+  color: #fff;
+}
+
+.progress-step.completed .step-number {
+  border-color: #C75B12;
+  background: transparent;
+  color: #C75B12;
+}
+
+.progress-step span {
+  font-size: 0.75rem;
+  color: #EAEAEA;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.progress-line {
+  width: 60px;
+  height: 2px;
+  background: #3D3D5C;
+  margin: 0 12px;
+  margin-bottom: 24px;
+}
+
+/* Multi-step form */
+.questionnaire {
+  display: block;
+}
+
+.form-step {
+  display: none;
+}
+
+.form-step.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.form-step .full-width {
+  grid-column: 1 / -1;
+}
+
+.form-nav {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.form-nav .btn {
+  flex: 1;
+}
+
+/* Select styling */
+.form-group select {
+  background: #0C0C14;
+  border: 1px solid #3D3D5C;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #EAEAEA;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  cursor: pointer;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: #C75B12;
+}
+
+/* Validation error */
+.field-error {
+  border-color: #e74c3c !important;
+  box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2);
+}
+
+/* Cal.com embed */
+.cal-embed-wrapper {
+  grid-column: 1 / -1;
+  margin: 8px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cal-embed-wrapper iframe {
+  width: 100%;
+  border: none;
+}
+
+/* Schedule intro */
+.schedule-intro {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 16px 0 8px;
+}
+
+.schedule-intro h3 {
+  color: #EAEAEA;
+  font-size: 1.25rem;
+  margin: 16px 0 8px;
+}
+
+.schedule-intro p {
+  color: #EAEAEA;
+  opacity: 0.7;
+  font-size: 0.95rem;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+/* Success state */
+.success-icon {
+  margin-bottom: 20px;
+}
+
+.success-title {
+  color: #EAEAEA;
+  font-size: 1.75rem;
+  margin-bottom: 16px;
+}
+
+.success-message {
+  color: #EAEAEA;
+  opacity: 0.8;
+  font-size: 1.05rem;
+  max-width: 440px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+
+.success-direct {
+  color: #EAEAEA;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
+.success-direct a {
+  color: #C75B12;
 }
 
 .contact-info {
@@ -698,6 +951,11 @@ h1, h2, h3 {
     grid-template-columns: 1fr 1fr;
   }
 
+  .founding-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
   .contact-form {
     grid-template-columns: 1fr;
   }
@@ -708,6 +966,28 @@ h1, h2, h3 {
 
   .contact-form .btn {
     grid-column: 1;
+  }
+
+  .form-step.active {
+    grid-template-columns: 1fr;
+  }
+
+  .form-step .full-width {
+    grid-column: 1;
+  }
+
+  .form-nav {
+    grid-column: 1;
+    flex-direction: column;
+  }
+
+  .progress-step span {
+    font-size: 0.65rem;
+  }
+
+  .progress-line {
+    width: 30px;
+    margin: 0 6px;
   }
 }
 
@@ -795,5 +1075,10 @@ h1, h2, h3 {
   .contact-link {
     font-size: 0.85rem;
     word-break: break-all;
+  }
+
+  .progress-line {
+    width: 20px;
+    margin: 0 4px;
   }
 }

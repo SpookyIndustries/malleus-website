@@ -103,7 +103,7 @@
       </div>
       <p class="hero-tagline">Run your service business, not your software.</p>
       <p class="hero-subtitle">From field service to retail — one platform, tailored to your business.</p>
-      <a href="#contact" class="btn btn-primary">Start Your Free 30-Day Pilot</a>
+      <a href="#contact" class="btn btn-primary">Apply for the Pilot Program</a>
     </div>
   </section>
 
@@ -215,7 +215,7 @@
             <li>All features included</li>
             <li>30-day free pilot</li>
           </ul>
-          <a href="#contact" class="btn btn-outline">Get Started</a>
+          <a href="#contact" class="btn btn-outline">Start Your Pilot</a>
         </div>
 
         <div class="pricing-card featured">
@@ -229,7 +229,7 @@
             <li>All features included</li>
             <li>30-day free pilot</li>
           </ul>
-          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#contact" class="btn btn-primary">Start Your Pilot</a>
         </div>
 
         <div class="pricing-card">
@@ -242,7 +242,7 @@
             <li>All features included</li>
             <li>30-day free pilot</li>
           </ul>
-          <a href="#contact" class="btn btn-outline">Get Started</a>
+          <a href="#contact" class="btn btn-outline">Start Your Pilot</a>
         </div>
 
       </div>
@@ -344,35 +344,177 @@
     </div>
   </section>
 
+  <!-- ===================== FOUNDING CUSTOMER ===================== -->
+  <section class="founding" id="founding">
+    <div class="container">
+      <h2 class="section-title">Now accepting founding customers.</h2>
+      <p class="section-subtitle dark">We're selecting a small group of businesses for our charter program. Founding customers get benefits that won't be available later.</p>
+      <div class="founding-grid">
+        <div class="founding-item">
+          <div class="founding-icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4l4 8h8l-6 5 2 9-8-5-8 5 2-9-6-5h8z"/></svg>
+          </div>
+          <h3>Locked-in pricing</h3>
+          <p>Your rate never goes up. Guaranteed for the life of your account.</p>
+        </div>
+        <div class="founding-item">
+          <div class="founding-icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><circle cx="16" cy="12" r="8"/><path d="M6 28c0-5.523 4.477-10 10-10s10 4.477 10 10"/></svg>
+          </div>
+          <h3>Direct founder access</h3>
+          <p>Work directly with the person who built the app. No support tickets, no waiting.</p>
+        </div>
+        <div class="founding-item">
+          <div class="founding-icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 16l-4 4 4 4"/><path d="M24 16l4 4-4 4"/><path d="M18 8l-4 16"/></svg>
+          </div>
+          <h3>Priority feature requests</h3>
+          <p>Your feedback shapes the product. Founding customers drive the roadmap.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===================== CONTACT ===================== -->
   <section class="contact" id="contact">
     <div class="container">
-      <h2 class="section-title light">Ready to see it in action?</h2>
-      <p class="section-subtitle">Start with a free 30-day pilot. Full platform access, real data, real workflows. No credit card required.</p>
+      <h2 class="section-title light">Apply for the Pilot Program</h2>
+      <p class="section-subtitle">30 days. Full platform access. Real data. No commitment until you're ready. Takes about 2 minutes.</p>
 
       <div class="contact-content">
-        <form class="contact-form" action="https://formspree.io/f/mwvrewwd" method="POST" id="contactForm">
-          <div class="form-group">
-            <label for="name">Name *</label>
-            <input type="text" id="name" name="name" required placeholder="Your name">
+        <!-- Progress Steps -->
+        <div class="form-progress">
+          <div class="progress-step active" data-step="1">
+            <div class="step-number">1</div>
+            <span>About You</span>
           </div>
-          <div class="form-group">
-            <label for="company">Company *</label>
-            <input type="text" id="company" name="company" required placeholder="Company name">
+          <div class="progress-line"></div>
+          <div class="progress-step" data-step="2">
+            <div class="step-number">2</div>
+            <span>Your Business</span>
           </div>
-          <div class="form-group">
-            <label for="email">Email *</label>
-            <input type="email" id="email" name="email" required placeholder="you@company.com">
+          <div class="progress-line"></div>
+          <div class="progress-step" data-step="3">
+            <div class="step-number">3</div>
+            <span>Schedule Call</span>
           </div>
-          <div class="form-group">
-            <label for="phone">Phone <span class="optional">(optional)</span></label>
-            <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+        </div>
+
+        <form class="contact-form questionnaire" action="https://formspree.io/f/mwvrewwd" method="POST" id="contactForm">
+
+          <!-- Step 1: Contact Info -->
+          <div class="form-step active" id="step1">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="company">Company *</label>
+              <input type="text" id="company" name="company" required placeholder="Company name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="you@company.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="(555) 555-5555">
+            </div>
+            <div class="form-group full-width">
+              <label for="industry">What type of business do you run? *</label>
+              <select id="industry" name="industry" required>
+                <option value="" disabled selected>Select your industry</option>
+                <option value="Electrician">Electrician</option>
+                <option value="Plumber">Plumber</option>
+                <option value="HVAC">HVAC</option>
+                <option value="Handyman">Handyman / General Contractor</option>
+                <option value="Landscaping">Landscaping</option>
+                <option value="Cleaning">Cleaning Service</option>
+                <option value="Retail">Retail / Liquor Store</option>
+                <option value="Auto">Auto / Dealership / Motorcycle</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label for="teamSize">How many people are on your team? *</label>
+              <select id="teamSize" name="team_size" required>
+                <option value="" disabled selected>Select team size</option>
+                <option value="Just me">Just me</option>
+                <option value="2-5">2-5</option>
+                <option value="6-10">6-10</option>
+                <option value="11-25">11-25</option>
+                <option value="26-50">26-50</option>
+                <option value="50+">50+</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn-primary btn-full" onclick="nextStep(2)">Next: Tell Us About Your Business</button>
           </div>
-          <div class="form-group full-width">
-            <label for="message">Message <span class="optional">(optional)</span></label>
-            <textarea id="message" name="message" rows="4" placeholder="Tell us about your business and what you're looking for..."></textarea>
+
+          <!-- Step 2: Qualifying Questions -->
+          <div class="form-step" id="step2">
+            <div class="form-group full-width">
+              <label for="q1">What's the biggest challenge you're facing right now in your business? *</label>
+              <textarea id="q1" name="biggest_challenge" rows="3" required placeholder="What's costing you time, money, or headaches?"></textarea>
+            </div>
+            <div class="form-group full-width">
+              <label for="paperworkHours">How many hours per week does your team spend on paperwork, scheduling, or chasing invoices? *</label>
+              <select id="paperworkHours" name="paperwork_hours" required>
+                <option value="" disabled selected>Select an estimate</option>
+                <option value="1-5 hours">1-5 hours</option>
+                <option value="5-10 hours">5-10 hours</option>
+                <option value="10-20 hours">10-20 hours</option>
+                <option value="20+ hours">20+ hours</option>
+                <option value="Not sure">Not sure, but too many</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label for="q4">Where do you want your business to be 6 months from now? *</label>
+              <textarea id="q4" name="six_month_vision" rows="3" required placeholder="What does success look like for you?"></textarea>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn btn-outline" onclick="prevStep(1)">Back</button>
+              <button type="button" class="btn btn-primary" onclick="nextStep(3)">Next: Schedule Your Call</button>
+            </div>
           </div>
-          <button type="submit" class="btn btn-primary btn-full">Start Your Free Pilot</button>
+
+          <!-- Step 3: Schedule Call -->
+          <div class="form-step" id="step3">
+            <div class="schedule-intro">
+              <svg viewBox="0 0 48 48" fill="none" stroke="#C75B12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="48" height="48"><rect x="6" y="10" width="36" height="32" rx="4"/><path d="M6 20h36"/><path d="M16 6v8"/><path d="M32 6v8"/><path d="M20 28l4 4 6-8"/></svg>
+              <h3>Pick a time that works for you</h3>
+              <p>We'll do a 20-minute screen share call over Zoom. I'll walk you through the app using your business info — not a generic demo.</p>
+            </div>
+            <!-- Cal.com booking embed -->
+            <div class="cal-embed-wrapper full-width" id="calEmbed">
+              <iframe
+                src="https://cal.com/malleus/malleus-demo?embed=true&layout=month_view&theme=dark"
+                frameborder="0"
+                width="100%"
+                height="500"
+                style="border-radius: 8px; background: #0C0C14; min-height: 500px;"
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="form-group full-width">
+              <label for="notes">Anything else we should know? <span class="optional">(optional)</span></label>
+              <textarea id="notes" name="additional_notes" rows="2" placeholder="Specific features you want to see, questions you have, etc."></textarea>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn btn-outline" onclick="prevStep(2)">Back</button>
+              <button type="submit" class="btn btn-primary">Submit &amp; Book My Demo</button>
+            </div>
+          </div>
+
+          <!-- Success State -->
+          <div class="form-step" id="stepSuccess" style="text-align: center;">
+            <div class="success-icon">
+              <svg viewBox="0 0 64 64" fill="none" stroke="#C75B12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" width="64" height="64"><circle cx="32" cy="32" r="28"/><path d="M20 32l8 8 16-18"/></svg>
+            </div>
+            <h3 class="success-title">You're in.</h3>
+            <p class="success-message">Your demo call is booked. I'll send a Zoom link to confirm. I'll be prepping a personalized walkthrough using the info you just shared — this won't be a generic demo.</p>
+            <p class="success-direct">Questions before our call? Reach me directly at <a href="mailto:jake@getmalleus.com">jake@getmalleus.com</a></p>
+          </div>
+
         </form>
 
         <div class="contact-info">
@@ -415,22 +557,88 @@
       });
     });
 
-    // Simple form handling — mailto fallback until Formspree is configured
+    // Multi-step form navigation
+    var currentStep = 1;
+
+    function showStep(step) {
+      document.querySelectorAll('.form-step').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      document.querySelectorAll('.progress-step').forEach(function(el) {
+        el.classList.remove('active', 'completed');
+      });
+      var target = document.getElementById('step' + step);
+      if (target) target.classList.add('active');
+      // Mark progress
+      for (var i = 1; i <= 3; i++) {
+        var ps = document.querySelector('.progress-step[data-step="' + i + '"]');
+        if (i < step) ps.classList.add('completed');
+        if (i === step) ps.classList.add('active');
+      }
+      // Scroll to form
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function nextStep(step) {
+      // Validate current step required fields
+      var currentStepEl = document.getElementById('step' + currentStep);
+      var required = currentStepEl.querySelectorAll('[required]');
+      var valid = true;
+      required.forEach(function(field) {
+        if (!field.value || (field.tagName === 'SELECT' && field.value === '')) {
+          field.classList.add('field-error');
+          valid = false;
+        } else {
+          field.classList.remove('field-error');
+        }
+      });
+      if (!valid) {
+        // Focus first invalid field
+        currentStepEl.querySelector('.field-error').focus();
+        return;
+      }
+      currentStep = step;
+      showStep(step);
+    }
+
+    function prevStep(step) {
+      currentStep = step;
+      showStep(step);
+    }
+
+    // Form submission
     document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
       var form = this;
-      // If formspree isn't set up yet, fall back to mailto
-      if (form.action.indexOf('placeholder') !== -1) {
-        e.preventDefault();
+      var formData = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      }).then(function(response) {
+        if (response.ok) {
+          // Show success state
+          document.querySelectorAll('.form-step').forEach(function(el) {
+            el.classList.remove('active');
+          });
+          document.getElementById('stepSuccess').classList.add('active');
+          document.querySelectorAll('.progress-step').forEach(function(el) {
+            el.classList.add('completed');
+          });
+          // Hide progress bar
+          document.querySelector('.form-progress').style.display = 'none';
+        } else {
+          alert('Something went wrong. Please try again or email jake@getmalleus.com directly.');
+        }
+      }).catch(function() {
+        // Fallback to mailto
         var name = form.querySelector('#name').value;
         var company = form.querySelector('#company').value;
         var email = form.querySelector('#email').value;
-        var phone = form.querySelector('#phone').value;
-        var message = form.querySelector('#message').value;
         var body = 'Name: ' + name + '%0D%0ACompany: ' + company + '%0D%0AEmail: ' + email;
-        if (phone) body += '%0D%0APhone: ' + phone;
-        if (message) body += '%0D%0A%0D%0AMessage: ' + message;
-        window.location.href = 'mailto:jake@getmalleus.com?subject=Malleus Pilot Request - ' + encodeURIComponent(company) + '&body=' + body;
-      }
+        window.location.href = 'mailto:jake@getmalleus.com?subject=Malleus Demo Request - ' + encodeURIComponent(company) + '&body=' + body;
+      });
     });
   </script>
 
