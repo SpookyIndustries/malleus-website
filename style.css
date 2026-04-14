@@ -1081,4 +1081,92 @@ h1, h2, h3 {
     width: 20px;
     margin: 0 4px;
   }
+
+  .marketing-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ============================================
+   MARKETING HIGHLIGHT SECTION
+   ============================================ */
+.marketing-highlight {
+  background: #151528;
+  padding: 100px 0;
+}
+
+.marketing-highlight .section-title {
+  color: #EAEAEA;
+}
+
+.marketing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.marketing-item {
+  text-align: center;
+  padding: 32px 20px;
+  background: rgba(199, 91, 18, 0.06);
+  border: 1px solid rgba(199, 91, 18, 0.15);
+  border-radius: 12px;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.marketing-item:hover {
+  border-color: rgba(199, 91, 18, 0.4);
+  background: rgba(199, 91, 18, 0.1);
+}
+
+.marketing-icon {
+  width: 48px;
+  height: 48px;
+  color: #C75B12;
+  margin: 0 auto 16px;
+}
+
+.marketing-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.marketing-item h3 {
+  font-size: 1.1rem;
+  color: #EAEAEA;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.marketing-item p {
+  font-size: 0.95rem;
+  color: #EAEAEA;
+  opacity: 0.65;
+  line-height: 1.5;
+}
+
+.marketing-bottom {
+  text-align: center;
+  margin-top: 56px;
+}
+
+.marketing-callout {
+  font-size: 1.15rem;
+  color: #EAEAEA;
+  opacity: 0.8;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.featured-card {
+  border: 1px solid rgba(199, 91, 18, 0.3) !important;
+  background: rgba(199, 91, 18, 0.05) !important;
+}
+
+@media (max-width: 768px) {
+  .marketing-grid {
+    grid-template-columns: 1fr;
+  }
 }
