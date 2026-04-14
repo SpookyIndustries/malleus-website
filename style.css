@@ -1107,43 +1107,31 @@ h1, h2, h3 {
 }
 
 .marketing-item {
-  text-align: center;
-  padding: 32px 20px;
-  background: rgba(199, 91, 18, 0.06);
-  border: 1px solid rgba(199, 91, 18, 0.15);
+  text-align: left;
+  padding: 28px 24px;
+  background: rgba(199, 91, 18, 0.04);
+  border: 1px solid rgba(199, 91, 18, 0.12);
   border-radius: 12px;
   transition: border-color 0.3s, background 0.3s;
 }
 
 .marketing-item:hover {
-  border-color: rgba(199, 91, 18, 0.4);
-  background: rgba(199, 91, 18, 0.1);
-}
-
-.marketing-icon {
-  width: 48px;
-  height: 48px;
-  color: #C75B12;
-  margin: 0 auto 16px;
-}
-
-.marketing-icon svg {
-  width: 48px;
-  height: 48px;
+  border-color: rgba(199, 91, 18, 0.35);
+  background: rgba(199, 91, 18, 0.08);
 }
 
 .marketing-item h3 {
-  font-size: 1.1rem;
-  color: #EAEAEA;
-  margin-bottom: 8px;
-  letter-spacing: 0.5px;
+  font-size: 1.05rem;
+  color: #C75B12;
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
 }
 
 .marketing-item p {
   font-size: 0.95rem;
   color: #EAEAEA;
-  opacity: 0.65;
-  line-height: 1.5;
+  opacity: 0.7;
+  line-height: 1.6;
 }
 
 .marketing-bottom {
@@ -1152,12 +1140,14 @@ h1, h2, h3 {
 }
 
 .marketing-callout {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: #EAEAEA;
-  opacity: 0.8;
+  opacity: 0.75;
   line-height: 1.7;
   margin-bottom: 24px;
-  font-style: italic;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .featured-card {
