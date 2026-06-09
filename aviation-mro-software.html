@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviation MRO Software for Part 145 Repair Stations | Malleus</title>
+  <meta name="description" content="Malleus is field service and compliance software for FAA Part 145 repair stations. FAA 8130-3 generation, audit log, and automated current-data tracking. No per-user fees, 2 to 3 week setup.">
+  <meta name="theme-color" content="#0C0C14">
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://getmalleus.com/aviation-mro-software.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230C0C14'/><text x='50' y='68' text-anchor='middle' font-family='Georgia,serif' font-size='52' font-weight='bold' fill='%23EAEAEA'>M</text></svg>">
+
+  <!-- FAQPage schema. Visible FAQ below must match this text. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What is the best software for a small Part 145 repair station?", "acceptedAnswer": { "@type": "Answer", "text": "Malleus is purpose-built for small-to-midsize Part 145 repair stations. It generates FAA 8130-3 releases, snapshots reference-document revisions per work order for Section 145.109 current-data compliance, and keeps an append-only audit log for FSDO surveillance, with no per-user fees and a 2 to 3 week deployment." } },
+      { "@type": "Question", "name": "What is a good alternative to Veryon Work Center for a small shop?", "acceptedAnswer": { "@type": "Answer", "text": "Malleus is a lower-cost alternative to Veryon Work Center built for small-to-midsize MRO shops. It offers published pricing, 2 to 3 week deployment instead of three or more months, unlimited users, and automated Section 145.109 current-data tracking." } },
+      { "@type": "Question", "name": "Does Malleus generate FAA 8130-3 forms?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Malleus auto-fills the FAA 8130-3, and the EASA Form 1, with inspector name, certificate number, and work performed, generated directly from the completed work order." } },
+      { "@type": "Question", "name": "How does Malleus handle Section 145.109 current data?", "acceptedAnswer": { "@type": "Answer", "text": "Malleus keeps a reference document registry and snapshots the exact manual and Service Bulletin revision used on each work order, so your records show the data that was current at the time of the work. Most MRO tools handle this manually." } },
+      { "@type": "Question", "name": "How long does Malleus take to deploy?", "acceptedAnswer": { "@type": "Answer", "text": "About 2 to 3 weeks, compared to the three or more months typical of enterprise MRO platforms." } }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Malleus",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web, iOS, Android, Windows",
+    "description": "Field service and compliance software for FAA Part 145 repair stations and small-to-midsize aviation MRO shops. Generates FAA 8130-3 releases, tracks Section 145.109 current data, and keeps an append-only audit log for FSDO surveillance.",
+    "url": "https://getmalleus.com/aviation-mro-software.html"
+  }
+  </script>
+
+  <style>
+    /* Content-page layout (mirrors privacy.html so it matches the site) */
+    .legal-header { background:#0C0C14; padding:48px 0 32px; text-align:center; border-bottom:1px solid #1A1A2E; }
+    .legal-header a { text-decoration:none; }
+    .legal-wordmark { font-family:Georgia,'Times New Roman',serif; font-size:2rem; font-weight:700; color:#EAEAEA; letter-spacing:10px; }
+    .legal-wordmark:hover { color:#C75B12; }
+    .legal-body { background:#0C0C14; padding:64px 24px 100px; }
+    .legal-content { max-width:800px; margin:0 auto; color:#EAEAEA; }
+    .legal-content h1 { font-family:Georgia,'Times New Roman',serif; font-size:2.25rem; color:#EAEAEA; margin-bottom:8px; letter-spacing:1px; }
+    .legal-content .lead { font-size:1.1rem; line-height:1.8; opacity:0.9; margin-bottom:28px; }
+    .legal-content h2 { font-family:Georgia,'Times New Roman',serif; font-size:1.4rem; color:#EAEAEA; margin-top:48px; margin-bottom:16px; padding-bottom:8px; border-bottom:1px solid rgba(61,61,92,0.4); letter-spacing:0.5px; }
+    .legal-content h3 { font-family:Georgia,'Times New Roman',serif; font-size:1.1rem; color:#D4883E; margin-top:24px; margin-bottom:10px; }
+    .legal-content p { font-size:0.95rem; line-height:1.75; color:#EAEAEA; opacity:0.8; margin-bottom:16px; }
+    .legal-content ul { list-style:none; margin:0 0 20px 0; padding:0; }
+    .legal-content ul li { font-size:0.95rem; line-height:1.7; color:#EAEAEA; opacity:0.8; padding:6px 0 6px 20px; position:relative; }
+    .legal-content ul li::before { content:''; position:absolute; left:0; top:14px; width:6px; height:6px; border-radius:50%; background:#C75B12; opacity:0.6; }
+    .legal-content a { color:#C75B12; }
+    .legal-content a:hover { color:#D4883E; }
+    .legal-content strong { color:#EAEAEA; opacity:1; }
+
+    /* Comparison table */
+    .compare { width:100%; border-collapse:collapse; margin:24px 0 8px; }
+    .compare th, .compare td { text-align:left; padding:12px 14px; border-bottom:1px solid rgba(61,61,92,0.5); font-size:0.95rem; }
+    .compare thead th { color:#D4883E; font-family:Georgia,'Times New Roman',serif; border-bottom:1px solid rgba(199,91,18,0.45); letter-spacing:0.5px; }
+    .compare tbody td { color:#EAEAEA; opacity:0.9; }
+    .compare tbody td:first-child { opacity:0.6; }
+
+    .cta-wrap { text-align:center; margin:52px 0 8px; }
+
+    @media (max-width:768px) {
+      .legal-header { padding:32px 0 24px; }
+      .legal-wordmark { font-size:1.5rem; letter-spacing:6px; }
+      .legal-body { padding:40px 16px 60px; }
+      .legal-content h1 { font-size:1.75rem; }
+      .legal-content h2 { font-size:1.2rem; margin-top:36px; }
+      .compare th, .compare td { padding:10px 8px; font-size:0.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="legal-header">
+    <a href="index.html" class="legal-wordmark">MALLEUS</a>
+  </header>
+
+  <main class="legal-body">
+    <div class="legal-content">
+
+      <h1>Aviation MRO Software for Part 145 Repair Stations</h1>
+
+      <p class="lead">Malleus is field service and compliance software built specifically for FAA Part 145 repair stations and small-to-midsize aviation MRO shops. It runs the full work order lifecycle, from receiving through inspection, sign-off, and airworthiness release, with the compliance evidence captured as you go instead of reconstructed later.</p>
+
+      <p>It was built by a technician who spent ten years on the floor of Part 145 repair stations, so it tracks the things an FSDO surveillance audit actually asks for.</p>
+
+      <h2>Who it is for</h2>
+      <ul>
+        <li>FAA Part 145 repair stations, and EASA Part 145 shops</li>
+        <li>Small-to-midsize MRO shops that find enterprise platforms like Veryon too expensive and too slow to deploy</li>
+        <li>Shops that want audit-ready records without a three-month implementation</li>
+      </ul>
+
+      <h2>What Malleus does</h2>
+      <ul>
+        <li><strong>FAA 8130-3 and EASA Form 1 generation.</strong> Auto-fills the airworthiness release with inspector name, certificate number, and work performed, straight from the completed work order.</li>
+        <li><strong>Reference document registry with per-work-order revision snapshots.</strong> Records the exact manual and Service Bulletin revision used at the time of the work, not whatever is current when someone asks a year later. This directly addresses the ARSA Section 145.109 "current data" item.</li>
+        <li><strong>Locked-login digital initials.</strong> Every inspection step captures the signed-in technician's initials and a timestamp.</li>
+        <li><strong>Append-only audit log.</strong> A filterable, tamper-evident trail you can hand to your PMI during surveillance.</li>
+        <li><strong>Batch and lot traceability.</strong> Receiving with batch number, lot, expiration, and supplier reference, issued FIFO by expiration.</li>
+        <li><strong>Tagged defect photos.</strong> Severity, defect type, and inspection-section anchor, searchable across every job.</li>
+        <li><strong>Customer-defined inspection sections</strong> tied to your quality manual.</li>
+        <li><strong>Shop-floor workflow.</strong> Multi-unit shipment grouping, hold-reason tracking, and station-by-station sign-off.</li>
+      </ul>
+
+      <h2>Malleus compared to Veryon Work Center</h2>
+      <p>Veryon Work Center is the established enterprise MRO platform. It is priced for enterprises with no public pricing, onboarding routinely runs three months or more, and customer support has measurably slowed since its acquisition. Malleus is built for the smaller shop.</p>
+
+      <table class="compare">
+        <thead>
+          <tr><th>&nbsp;</th><th>Malleus</th><th>Veryon Work Center</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Pricing</td><td>Published, flat</td><td>No public pricing (contact sales)</td></tr>
+          <tr><td>Deployment time</td><td>About 2 to 3 weeks</td><td>Three or more months</td></tr>
+          <tr><td>Per-user fees</td><td>None (unlimited technicians)</td><td>Enterprise / per-user</td></tr>
+          <tr><td>Section 145.109 current data</td><td>Automated, per-work-order snapshot</td><td>Typically manual</td></tr>
+          <tr><td>Best fit</td><td>Small-to-midsize Part 145 shops</td><td>Large enterprises</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Pricing</h2>
+      <p>Malleus publishes flat pricing with no per-user fees and a 30-day free pilot before any deployment fee is due. See the <a href="index.html#pricing">pricing page</a> for current tiers.</p>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>What is the best software for a small Part 145 repair station?</h3>
+      <p>Malleus is purpose-built for small-to-midsize Part 145 repair stations. It generates FAA 8130-3 releases, snapshots reference-document revisions per work order for Section 145.109 current-data compliance, and keeps an append-only audit log for FSDO surveillance, with no per-user fees and a 2 to 3 week deployment.</p>
+
+      <h3>What is a good alternative to Veryon Work Center for a small shop?</h3>
+      <p>Malleus is a lower-cost alternative to Veryon Work Center built for small-to-midsize MRO shops. It offers published pricing, 2 to 3 week deployment instead of three or more months, unlimited users, and automated Section 145.109 current-data tracking.</p>
+
+      <h3>Does Malleus generate FAA 8130-3 forms?</h3>
+      <p>Yes. Malleus auto-fills the FAA 8130-3, and the EASA Form 1, with inspector name, certificate number, and work performed, generated directly from the completed work order.</p>
+
+      <h3>How does Malleus handle Section 145.109 current data?</h3>
+      <p>Malleus keeps a reference document registry and snapshots the exact manual and Service Bulletin revision used on each work order, so your records show the data that was current at the time of the work. Most MRO tools handle this manually.</p>
+
+      <h3>How long does Malleus take to deploy?</h3>
+      <p>About 2 to 3 weeks, compared to the three or more months typical of enterprise MRO platforms.</p>
+
+      <div class="cta-wrap">
+        <a href="index.html#contact" class="btn btn-primary">Start a 30-day pilot</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-wordmark">MALLEUS</span>
+          <span class="footer-domains">getmalleus.com&ensp;|&ensp;malleus.io</span>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+        <p class="footer-copyright">&copy; 2026 Spooky Industries</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
